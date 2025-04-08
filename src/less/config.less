@@ -1,0 +1,162 @@
+// USER VARIABLES SECTION
+@white: #fff;
+@brown: #7D6E69;
+@bg: #FEFCF6;
+@accent: #EC7220;
+
+
+
+@fontsize: 20px; // Body Font Size
+@lineheight: 1.3; // Document Line Height
+
+@userfont: 'Raleway', sans-serif;
+@systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+@font-face {
+    font-family: 'Geologica';
+    src: url('../fonts/ViaodaLibre-Regular.eot');
+    src: url('../fonts/ViaodaLibre-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ViaodaLibre-Regular.woff2') format('woff2'),
+        url('../fonts/ViaodaLibre-Regular.woff') format('woff'),
+        url('../fonts/ViaodaLibre-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.container {
+    .wrapper();
+}
+
+// ::placeholder {
+// 	color: fade(@black, 40%);
+// }
+
+// ::selection {
+// 	background-color: fade(@accent, 30%);
+// 	color: @brown;
+// }
+
+// input, textarea {
+// 	outline: none;
+// 	&:focus:required:invalid { border: 1px solid @accent2 }
+// 	&:required:valid { border: 1px solid green }
+// }
+
+
+// html, body {
+//     overflow-x: hidden;
+// }
+
+// html {
+//     scroll-behavior: smooth;
+// }
+
+body {
+    position: relative;
+    font-family: @userfont;
+    font-size: @fontsize;
+    line-height: @lineheight;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+ 
+    color: @brown;
+    background-color: @bg;
+    // text-rendering: optimizeSpeed;
+    // -webkit-font-smoothing: antialiased;
+    // text-rendering: optimizeLegibility;
+    // position: relative;
+    min-width: 320px;
+    // letter-spacing: -0.01em;
+}
+
+main {
+    min-height: 100vh;
+}
+
+
+
+/* Наследуем шрифты для инпутов и кнопок */
+// input,
+// button,
+// textarea,
+// select {
+//   font: inherit;
+// }
+
+textarea {
+	resize: none;
+}
+
+// strong, b {
+//     font-weight: 700;
+// }
+
+// button {
+//     border: none;
+//     cursor: pointer;
+// }
+
+input, textarea { 
+    field-sizing: content; 
+}
+
+// служебные классы
+
+.overflow {
+    overflow: hidden;
+}
+
+.accent {
+    color: @accent;
+}
+
+.accent-bg {
+    color: @white;
+    background-color: @accent;
+}
+
+.m-auto {
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+
+.tac {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+
+/* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
+// Remove all mouse-triggered focus styles without breaking keyboard accessibility
+*:focus:not(:focus-visible) { 
+    outline: none !important; 
+}
+
+// fix safari
+input[type='submit'] { 
+	-webkit-appearance: none; 
+	-moz-appearance: none; 
+	appearance: none; 
+}
+
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
