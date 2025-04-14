@@ -87,6 +87,41 @@ $(function() {
         ]
     });
     
+    // feedback slider
+    $('.feedback__slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        // infinite: true,
+        // speed: 500,
+        // arrows: false,
+        nextArrow: $('.feedback-sl .slider__arrow-next'),
+        prevArrow: $('.feedback-sl .slider__arrow-prev'),
+        // cssEase: 'linear',
+        // dots: true,
+        // fade: true,
+        // autoplay: false,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 834,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
+    });
+    
     // article slider
     $('.article__slider').slick({
         slidesToShow: 4,
@@ -120,6 +155,22 @@ $(function() {
                 }
             },
         ]
+    });
+    $('.faq__item:first-child').find('.faq__header').addClass('active');
+    $('.faq__item:first-child').find('.faq__body').show();
+    
+    $('.faq__header').on('click', function () {
+        const faqBody = $(this).next();
+    
+        if (!$(this).hasClass('active')){
+            $('.faq__header').removeClass('active');
+            $('.faq__body').slideUp(300);
+            $(this).addClass('active');
+            faqBody.slideDown(300);
+        } else {
+            $(this).removeClass('active');
+            faqBody.slideUp(300);
+        }
     });
     $('.popup-link').fancybox({
         // thumbs : { autoStart:true },
