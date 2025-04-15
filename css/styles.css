@@ -695,6 +695,10 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-bottom: 10px;
 }
 
+.index a:hover {
+  text-decoration: underline;
+}
+
 .contacts {
   padding: 70px 0;
 }
@@ -1424,6 +1428,42 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-bottom: 40px;
 }
 
+.ba {
+  padding-top: 100px;
+  padding-bottom: 145px;
+  text-align: center;
+}
+
+.ba__title {
+  font-family: 'Viaoda';
+  font-weight: 400;
+  font-size: 40px;
+  color: #4B3A35;
+}
+
+.ba__descr {
+  margin-top: 16px;
+  font-size: 16px;
+  max-width: 734px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ba-slider {
+  margin-top: 40px;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ba-slider .handle:after {
+  color: #7D6E69;
+  background: #F9F4EC;
+  /* @orange */
+  border: none;
+  box-shadow: none;
+}
+
 .footer {
   font-size: 14px;
 }
@@ -1724,6 +1764,15 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .feedback {
     padding: 40px 0;
+  }
+
+  .ba {
+    padding-top: 0;
+    padding-bottom: 90px;
+  }
+
+  .ba-slider {
+    margin-top: 24px;
   }
 
   .footer__top {
@@ -2062,6 +2111,14 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .feedback-sl .goods__header {
     margin-bottom: 16px;
+  }
+
+  .ba__title {
+    font-size: 28px;
+  }
+
+  .ba__descr {
+    font-size: 14px;
   }
 
   .footer__top {

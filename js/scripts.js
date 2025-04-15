@@ -172,6 +172,7 @@ $(function() {
             faqBody.slideUp(300);
         }
     });
+    $('.ba-slider').beforeAfter();
     $('.popup-link').fancybox({
         // thumbs : { autoStart:true },
         toolbar: "auto",
