@@ -156,6 +156,17 @@ $(function() {
             },
         ]
     });
+    
+    // product slider
+    $('.product__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+    });
+    
+    // $( window ).on('resize',function() {
+    //     productSlider.slick('reinit');
+    //   });
     $('.faq__item:first-child').find('.faq__header').addClass('active');
     $('.faq__item:first-child').find('.faq__body').show();
     
@@ -185,5 +196,19 @@ $(function() {
         },
         closeExisting : true
     });
+    
+    $('[data-fancybox]').fancybox({
+        // thumbs : { autoStart:true },
+        toolbar: "auto",
+        infobar: true,
+        smallBtn: "auto",
+        protect: true,
+        loop: true,
+        iframe : {
+            preload : false
+        }
+    });
+
+    $('.catalog__select').niceSelect();
 
 });
