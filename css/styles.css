@@ -838,6 +838,15 @@ input[type="search"]::-webkit-search-results-decoration {
   border: 1px solid transparent;
 }
 
+.form__input {
+  padding: 16px 12px;
+  background-color: #F9F4EC;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1;
+  text-align: left;
+}
+
 .header {
   padding: 20px 0;
   border-bottom: 1px solid #E8DDCE;
@@ -1875,6 +1884,101 @@ input[type="search"]::-webkit-search-results-decoration {
           animation-timing-function: linear;
 }
 
+.popup {
+  text-align: center;
+  width: 860px;
+  max-width: 100%;
+  padding: 50px;
+  border-radius: 30px;
+}
+
+.popup__title {
+  margin-bottom: 16px;
+}
+
+.popup__subtitle {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  width: 504px;
+  max-width: 100%;
+}
+
+.popup__form > p {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.popup__form #myfile {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.popup .form__input {
+  width: 100%;
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popup textarea {
+  min-height: 100px;
+}
+
+.popup .form__label {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  font-size: 14px;
+  text-align: left;
+  background: url(../img/pic.svg) no-repeat left center / contain;
+}
+
+.popup .form__label:hover {
+  color: #EC7220;
+}
+
+.popup .form__submit {
+  margin-top: 15px;
+  width: 260px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popup__bottom {
+  width: 520px;
+  max-width: 100%;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+}
+
+.popup__bottom a:hover {
+  text-decoration: underline;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+  top: 20px;
+  right: 20px;
+  opacity: 1;
+  color: #7D6E69;
+}
+
+.fancybox-slide--html .fancybox-close-small svg {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 .footer {
   font-size: 14px;
 }
@@ -2716,6 +2820,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .repeater {
     margin: 0;
+  }
+
+  .popup__subtitle {
+    margin-bottom: 16px;
+    font-size: 14px;
   }
 
   .footer__top {
