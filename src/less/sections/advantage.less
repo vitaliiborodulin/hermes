@@ -1,0 +1,90 @@
+.advantage {
+    padding: 70px 0;
+
+    .md-block({
+        padding: 40px 0;
+    });
+
+    .xs-block({
+        padding: 30px 0;
+    });
+
+    &__h1 {
+        margin-bottom: 40px;
+        .md(text-align, center);
+        .xs(margin-bottom, 24px);
+    }
+
+    &__list {
+        .row-flex();
+        .md(justify-content, center);
+    }
+
+    &__item {
+        .col();
+        .size(3);
+        .size-lg(6);
+        .size-md(12);
+        max-width: 411px;
+        margin-bottom: 12px;
+        padding: 24px 16px;
+
+        border-radius: 30px;
+        border: 1px solid #E8DDCE;
+        // transition: transform 0.5s ease;
+
+        // &:hover {
+        //     transform: scale(1.2);
+        // }
+    }
+
+    &__pic {
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: 500;
+        color: @brown-2;
+        // max-width: 55%;
+
+        .xs(font-size, 16px);
+    }
+
+    &__descr {
+        font-size: 16px;
+        margin-top: 10px;
+
+        .xs(font-size, 14px);
+    }
+
+    br {
+        .xs(display, none);
+    }
+}
+
+.advantage-2 {
+    .advantage__pic {
+        margin-bottom: 32px;
+    }
+}
+
+.advantage-re {
+    .advantage__item {
+        margin-bottom: 23px;
+        border: none;
+        .xs(margin-bottom, 10px);
+    }
+}
+
+.advantage-product {
+    margin: 70px 0;
+
+    .md-block({
+        margin: 40px 0;
+    });
+
+    .xs-block({
+        margin: 0;
+    });
+}

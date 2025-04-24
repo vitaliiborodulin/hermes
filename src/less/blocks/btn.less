@@ -1,3 +1,89 @@
 .btn {
-    
+    display: inline-block;
+    padding: 16px 44px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 100px;
+    border: 1px solid transparent;
+
+    color: #FEFCF6;
+    background-color: @accent;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    white-space: nowrap;
+
+    .xs-block({
+        padding: 16px 24px;
+    });
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: darken(@accent, 10%);
+    }
+}
+
+.btn-o {
+    color: @accent;
+    background-color: transparent;
+    border: 1px solid @accent;
+
+    &:hover,
+    &:active,
+    &:focus  {
+        color: #FEFCF6;
+        background-color: darken(@accent, 10%);
+    }
+}
+
+.btn-o-br {
+    color: @brown;
+    background-color: transparent;
+    border: 1px solid @brown;
+
+    &:hover,
+    &:active,
+    &:focus  {
+        color: @accent;
+        border-color: @accent;
+        background-color: transparent;
+    }
+}
+
+.btn-o-w {
+    color: @white;
+    background-color: transparent;
+    border: 1px solid @white;
+
+    &:hover,
+    &:active,
+    &:focus  {
+        color: @brown;
+        border-color: @brown;
+        background-color: transparent;
+    }
+}
+
+.btn-wish {
+    // padding: 13px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid @accent;
+
+    &:hover,
+    &:active,
+    &:focus  {
+        svg {
+            path {
+                fill: @accent;
+            }
+        }
+    }
 }

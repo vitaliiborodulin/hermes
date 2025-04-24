@@ -9,15 +9,15 @@ module.exports = {
 		// xl: {
 		// 	width: "1200px",
 		// },
-		// lg: {
-		// 	width: "992px",
-		// },
+		lg: {
+			width: "992px",
+		},
 		md: {
 			width: "834px",
 			// fields: "40px"
 		},
 		xs: {
-			width: "390px",
+			width: "576px",
 			// fields: "15px"
 		},
 	}

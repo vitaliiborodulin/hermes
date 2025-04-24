@@ -1,0 +1,100 @@
+.ba {
+    padding-top: 100px;
+    padding-bottom: 145px;
+    text-align: center;
+
+    .md-block({
+        padding-top: 0;
+        padding-bottom: 90px;
+    });
+    
+    &__title {
+        font-family: 'Viaoda';
+        font-weight: 400;
+        font-size: 40px;
+        color: @brown-2;
+        .xs(font-size, 28px);
+    }
+    
+    &__descr {
+        margin-top: 16px;
+        font-size: 16px;
+        max-width: 734px;
+        margin-left: auto;
+        margin-right: auto;
+        .xs(font-size, 14px);
+    }
+    
+    &-slider {
+        margin-top: 40px;
+        max-width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+        .md(margin-top, 24px);
+    }
+}
+
+// .ba-slider {
+//     position: relative;
+//     overflow: hidden;
+// }
+
+// .ba-slider img {
+//     // width: 100%;
+//     // display:block;
+//     min-height: 260px;
+// }
+
+// .ba-slider .resize {
+//     position: absolute;
+//     top:0;
+//     left: 0;
+//     height: 100%;
+//     width: 50%;
+//     overflow: hidden;
+// }
+
+// .handle {
+//     position:absolute; 
+//     left:50%;
+//     top:0;
+//     bottom:0;
+//     width:4px;
+//     margin-left:-2px;
+  
+//     background: rgba(0,0,0,.5);
+//     cursor: ew-resize;
+//   }
+  
+.ba-slider .handle:after {
+//       position: absolute;
+//       top: 50%;
+//       width: 64px;
+//       height: 64px;
+//       margin: -32px 0 0 -32px;
+  
+//       content:'\21d4';
+//       color:white;
+//       font-weight:bold;
+//       font-size:36px;
+//       text-align:center;
+//       line-height:64px;
+   color: @brown;
+      background: #F9F4EC; /* @orange */
+      border: none;
+    //   border: 1px solid @brown-2; /* darken(@orange, 5%) */
+//       border-radius: 50%;
+//       transition:all 0.3s ease;
+      box-shadow: none;
+//         0 2px 6px rgba(0,0,0,.3), 
+//         inset 0 2px 0 rgba(255,255,255,.5),
+//         inset 0 60px 50px -30px #ffd466; /* lighten(@orange, 20%)*/ 
+  }
+  
+//   .handle.draggable:after {
+//       width: 48px;
+//       height: 48px;
+//       margin: -24px 0 0 -24px;
+//       line-height:50px;
+//       font-size:30px;
+//   }

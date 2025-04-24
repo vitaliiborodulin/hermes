@@ -1,19 +1,21 @@
 // USER VARIABLES SECTION
 @white: #fff;
 @brown: #7D6E69;
+@brown-2: #4B3A35;
 @bg: #FEFCF6;
+@grey: #F9F4EC;
 @accent: #EC7220;
 
 
 
-@fontsize: 20px; // Body Font Size
+@fontsize: 16px; // Body Font Size
 @lineheight: 1.3; // Document Line Height
 
 @userfont: 'Raleway', sans-serif;
 @systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
 
 @font-face {
-    font-family: 'Geologica';
+    font-family: 'Viaoda';
     src: url('../fonts/ViaodaLibre-Regular.eot');
     src: url('../fonts/ViaodaLibre-Regular.eot?#iefix') format('embedded-opentype'),
         url('../fonts/ViaodaLibre-Regular.woff2') format('woff2'),
@@ -72,9 +74,13 @@ body {
     // letter-spacing: -0.01em;
 }
 
-main {
-    min-height: 100vh;
+body.menu-opened {
+    overflow:hidden;
 }
+
+// main {
+//     min-height: 100vh;
+// }
 
 
 
@@ -110,12 +116,17 @@ input, textarea {
 }
 
 .accent {
-    color: @accent;
+    color: @accent!important;
 }
 
 .accent-bg {
-    color: @white;
-    background-color: @accent;
+    color: @white!important;
+    background-color: @accent!important;
+    
+}
+
+.grey-bg {
+    background-color: @grey!important;
 }
 
 .m-auto {
@@ -129,6 +140,25 @@ input, textarea {
 
 .w-100 {
     width: 100%;
+}
+
+.h-100vh {
+    min-height: 100vh;
+}
+
+.d-none {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .d-lg-block {
+        display: block;
+    }
+}
+@media screen and (max-width: 834px) {
+    .d-md-block {
+        display: block;
+    }
 }
 
 

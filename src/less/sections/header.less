@@ -1,3 +1,30 @@
 .header {
-   
+   padding: 20px 0;
+   border-bottom: 1px solid #E8DDCE;
+
+   svg {
+        path {
+            transition: fill 0.5s;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.user__menu {
+    a {
+        &:hover svg {
+            * {
+                stroke: @accent;
+            }
+        }
+    }
+    a+a {
+        margin-left: 12px;
+        .xs(margin-left, 4px);
+    }
 }

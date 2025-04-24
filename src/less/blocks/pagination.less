@@ -1,0 +1,48 @@
+.pagination {
+    margin-top: -4px;
+
+    .md-block({
+        margin-top: 4px;
+    });
+
+    .xs-block({
+        margin-top: 0;
+    });
+
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 36px;
+
+        color: @brown;
+
+        border: 1px solid transparent;
+        transition: all 0.5s ease;
+
+        // .xs(font-size, 16px);
+
+        &:hover,
+        &:active,
+        &:focus {
+            border-color: @accent;
+        }
+    }
+
+    .bx_active a {
+        color: @white;
+        background-color: @accent;
+        // opacity: 1;
+        border: 1px solid transparent;
+    }
+
+}

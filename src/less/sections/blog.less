@@ -1,0 +1,34 @@
+.blog {
+    padding-bottom: 70px;
+    .md(padding-bottom, 40px);
+    .xs(padding-bottom, 30px);
+
+    &__box {
+        padding-bottom: 24px;
+        font-size: 16px;
+
+        .row-flex();
+
+        .md(padding-bottom, 16px);
+
+        .xs-block({
+            padding-bottom: 8px;
+            font-size: 14px;
+        });
+
+        & > p {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    &__item {
+        .col();
+        .size(3);
+        .size-lg(6);
+        .size-xs(12);
+
+        margin-bottom: 20px;
+    }
+
+}

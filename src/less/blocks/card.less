@@ -1,0 +1,69 @@
+.card {
+    position: relative;
+    max-width: 405px;
+    border-radius: 30px;
+    border: 1px solid #E8DDCE;
+
+    &-wish {
+        position: absolute;
+        right: 18px;
+        top: 20px;
+        
+
+        &:hover svg {
+            path {
+                fill: @accent;
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 330px;
+        overflow: hidden;
+        border-radius: 30px;
+
+        img {
+            object-fit: contain;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__text {
+        padding: 40px 43px 32px 32px;
+
+        .md-block({
+            padding: 40px 7px 32px 32px;
+        });
+
+        .xs-block({
+            padding: 30px 15px 20px 20px;
+        });
+    }
+
+    &__title {
+        font-size: 16px;
+        color: @brown;
+    }
+
+    &__price {
+        margin-top: 12px;
+        font-size: 22px;
+        font-weight: 500;
+        color: @brown-2;
+    }
+}
+
+.card-wished .card-wish {
+    svg {
+        path {
+            fill: @accent;
+        }
+    }
+}
+
+.goods__slider .card {
+    max-width: none;
+}

@@ -1,0 +1,261 @@
+.hero {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 70px;
+
+    .md(padding-bottom, 40px);
+
+    .xs-block({
+        padding-top: 0;
+        padding-bottom: 30px;
+        background-color: @grey;
+        margin-bottom: 330px;
+    });
+
+    br {
+        .lg(display, none);
+    }
+
+    &__content {
+        .row-flex();
+    }
+
+    &__left {
+        .col();
+        .size(6);
+        .size-lg(12);
+    }
+
+    &__left {
+        padding: 60px;
+        border-radius: 30px;
+        background-color: #F9F4EB;
+
+        display: flex;
+        flex-direction: column;
+        
+        .lg-block({
+            margin-bottom: 14px;
+            padding: 25px;
+        });
+    }
+
+    &__text {
+        margin-top: auto;
+        margin-bottom: auto;
+
+        .lg-block({
+            margin-top: 35px;
+            margin-bottom: 72px;
+            max-width: 584px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        });
+
+        .xs-block({
+           margin-top: 25px;
+           margin-bottom: 11px;
+        });
+    }
+
+    &__h1 {
+        margin-bottom: 16px;
+        font-size: 70px;
+        font-family: 'Viaoda';
+        font-weight: 400;
+        // letter-spacing: -1px;
+        line-height: 1;
+        color: @brown-2;
+
+        .lg-block({
+            font-size: 60px;
+        });
+
+        .xs-block({
+            font-size: 30px;
+        });
+
+        span {
+            color: @accent;
+        }
+    }
+
+    &__subtitle {
+        font-size: 22px;
+        .xs(font-size, 14px);
+    }
+
+    &__btns {
+        margin-top: 50px;
+        margin-bottom: 72px;
+        display: flex;
+        gap: 16px;
+
+        .lg-block({
+            justify-content: center;
+            margin-bottom: 0;
+        });
+
+        .xs-block({
+            margin-top: 32px;
+            gap: 12px;
+            flex-direction: column;
+        });
+    }
+
+    &__list {
+        margin-top: auto;
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: center;
+        gap: 8px;
+
+        .lg(justify-content, center);
+
+        .xs-block({
+            position: absolute;
+            bottom: -300px;
+            left: 15px;
+            right: 15px;
+        });
+    }
+
+    &__item {
+        // margin-bottom: 5px;
+        width: 100%;
+        flex-basis: 165px;
+        padding: 16px;
+        border: 1px solid #E8DDCE;
+        border-radius: 20px;
+        font-size: 16px;
+        color: @brown-2;
+
+        .lg-block({
+            font-size: 14px;
+        });
+
+        .xs-block({
+            flex-basis: 100%;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            border-radius: 10px;
+        });
+    }
+
+    &__pic {
+        margin-bottom: 12px;
+        width: 24px;
+        height: 24px;
+        .xs(margin-bottom, 0);
+    }
+
+    &__right {
+        .col();
+        .size(6);
+        .size-lg(12);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 20px;
+
+        .lg-block({
+            flex-direction: row;
+            gap: 14px;
+        });
+
+        .xs-block({
+            flex-wrap: wrap;
+        });
+
+        a {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__buy {
+        padding: 30px;
+        height: 420px;
+        border-radius: 30px;
+        background: #F7ECDE url(../img/hero-buy.jpg) no-repeat center/cover;
+        transition: color 0.5s ease;
+
+        .lg-block({
+            height: 220px;
+            padding: 16px;
+            border-radius: 16px;
+        });
+
+        &:hover {
+            color: @accent;
+
+            .hero__buy-title svg {
+                transform: translateX(10px);
+
+                path {
+                    stroke: @accent;
+                }
+            }
+        }
+    }
+
+    &__buy-title {
+        font-size: 40px;
+        font-family: 'Viaoda';
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+
+        .lg(font-size, 20px);
+
+        svg {
+            transition: all 0.5s ease;
+        }
+    }
+
+    &__sell {
+        padding: 30px;
+        height: 420px;
+        border-radius: 30px;
+        background: @accent url(../img/hero-sell.jpg) no-repeat center/cover;
+        
+        .lg-block({
+            height: 220px;
+            padding: 16px;
+            border-radius: 16px;
+        });
+
+        &:hover {
+            
+            .hero__sell-title {
+                color: @brown-2;
+            }
+
+            .hero__sell-title svg {
+                transform: translateX(10px);
+                
+                path {
+                    stroke: @brown-2;
+                }
+            }
+        }
+    }
+
+    &__sell-title {
+        font-size: 40px;
+        font-family: 'Viaoda';
+        font-weight: 400;
+        color: @bg;
+        transition: color 0.5s ease;
+        display: flex;
+        align-items: center;
+        .lg(font-size, 20px);
+
+        svg {
+            transition: all 0.5s ease;
+        }
+    }
+}

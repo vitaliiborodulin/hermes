@@ -1,0 +1,215 @@
+//= html/head.html
+
+<body>
+
+	//= html/header.html
+
+	<main>
+
+		<section class="catalog">
+			<div class="container">
+				<div id="navigation">
+					<div class="breadcrumbs">
+						<div class="bx-breadcrumb-item"><a href="index.html">Главная</a></div>
+						<div class="separator">/</div>
+						<div class="bx-breadcrumb-item">Каталог</div>
+					</div>
+				</div>
+
+				<h1 class="page__h1">Каталог</h1>
+
+                <div class="catalog__content">
+
+					<aside class="catalog__aside">
+						<ul>
+							<li><a href="#">Смотреть все</a></li>
+							<li><a href="#">Клатчи</a></li>
+							<li><a href="#">Кошельки</a></li>
+							<li><a href="#">Мини</a></li>
+							<li><a href="#">Рюкзаки</a></li>
+							<li><a href="#">С клапанами</a></li>
+							<li><a href="#">Сумки из ПВХ</a></li>
+							<li><a href="#">Шопперы</a></li>
+							<li><a href="#">Другие модели</a></li>
+						</ul>
+					</aside>
+
+					<div class="catalog__box">
+
+						<div class="catalog__filters">
+							
+							<form action="#" method="POST" id="filter" class="catalog__filter">
+                                
+                                <select name="show" id="show" class="catalog__select d-none d-lg-block">
+                                    <option data-display="Смотреть все">Смотреть все</option>
+                                    <option value="show-asc">По возрастанию</option>
+                                    <option value="show-desc">По убыванию</option>
+                                </select>
+
+                                <select name="price" id="price" class="catalog__select">
+                                    <option data-display="Цена">Цена</option>
+                                    <option value="price-asc">По возрастанию</option>
+                                    <option value="price-desc">По убыванию</option>
+                                </select>
+
+                                <select name="stock" id="stock" class="catalog__select">
+                                    <option data-display="Наличие">Наличие</option>
+                                    <option value="all">Все</option>
+                                    <option value="stock">Есть в наличии</option>
+                                </select>
+
+                                <select name="order" id="order" class="catalog__select">
+                                    <option data-display="Порядок: по умолчанию">Порядок: по умолчанию</option>
+                                    <option value="order-asc">По возрастанию</option>
+                                    <option value="order-desc">По убыванию</option>
+                                </select>
+
+							</form>
+
+						</div>
+
+						<div class="catalog__list">
+
+							<div class="card catalog__item">
+								<a href="product.html">
+									 <button type="button" class="card-wish">
+										 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											 <path d="M16.2189 3.32846C13.9842 1.95769 12.0337 2.51009 10.8621 3.39001C10.3816 3.7508 10.1414 3.93119 10.0001 3.93119C9.85875 3.93119 9.61858 3.7508 9.13808 3.39001C7.96643 2.51009 6.01599 1.95769 3.78128 3.32846C0.848472 5.12745 0.184848 11.0624 6.94969 16.0695C8.23818 17.0232 8.88241 17.5 10.0001 17.5C11.1177 17.5 11.762 17.0232 13.0505 16.0695C19.8153 11.0624 19.1517 5.12745 16.2189 3.32846Z" stroke="#EC7220" stroke-linecap="round"/>
+										 </svg>
+									 </button>
+									 <div class="card__img">
+										 <img src="img/card-1.png" alt="">
+									 </div>
+									 <div class="card__text">
+										 <h3 class="card__title">Garden Party 49 voyage bag</h3>
+										 <div class="card__price">650 000 ₽</div>
+									 </div>
+								</a>
+							</div>
+
+							<div class="card card-wished catalog__item">
+								<a href="product.html">
+									<button type="button" class="card-wish">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16.2189 3.32846C13.9842 1.95769 12.0337 2.51009 10.8621 3.39001C10.3816 3.7508 10.1414 3.93119 10.0001 3.93119C9.85875 3.93119 9.61858 3.7508 9.13808 3.39001C7.96643 2.51009 6.01599 1.95769 3.78128 3.32846C0.848472 5.12745 0.184848 11.0624 6.94969 16.0695C8.23818 17.0232 8.88241 17.5 10.0001 17.5C11.1177 17.5 11.762 17.0232 13.0505 16.0695C19.8153 11.0624 19.1517 5.12745 16.2189 3.32846Z" stroke="#EC7220" stroke-linecap="round"/>
+										</svg>
+									</button>
+									<div class="card__img">
+										<img src="img/card-2.png" alt="">
+									</div>
+									<div class="card__text">
+										<h3 class="card__title">Сумка Birkin 25 Togo</h3>
+										<div class="card__price">3 500 000 ₽</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="card catalog__item">
+								<a href="product.html">
+									<button type="button" class="card-wish">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16.2189 3.32846C13.9842 1.95769 12.0337 2.51009 10.8621 3.39001C10.3816 3.7508 10.1414 3.93119 10.0001 3.93119C9.85875 3.93119 9.61858 3.7508 9.13808 3.39001C7.96643 2.51009 6.01599 1.95769 3.78128 3.32846C0.848472 5.12745 0.184848 11.0624 6.94969 16.0695C8.23818 17.0232 8.88241 17.5 10.0001 17.5C11.1177 17.5 11.762 17.0232 13.0505 16.0695C19.8153 11.0624 19.1517 5.12745 16.2189 3.32846Z" stroke="#EC7220" stroke-linecap="round"/>
+										</svg>
+									</button>
+									<div class="card__img">
+										<img src="img/card-3.png" alt="">
+									</div>
+									<div class="card__text">
+										<h3 class="card__title">R.M.S Weekender bag</h3>
+										<div class="card__price">650 000 ₽</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="card catalog__item">
+								<a href="product.html">
+									 <button type="button" class="card-wish">
+										 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											 <path d="M16.2189 3.32846C13.9842 1.95769 12.0337 2.51009 10.8621 3.39001C10.3816 3.7508 10.1414 3.93119 10.0001 3.93119C9.85875 3.93119 9.61858 3.7508 9.13808 3.39001C7.96643 2.51009 6.01599 1.95769 3.78128 3.32846C0.848472 5.12745 0.184848 11.0624 6.94969 16.0695C8.23818 17.0232 8.88241 17.5 10.0001 17.5C11.1177 17.5 11.762 17.0232 13.0505 16.0695C19.8153 11.0624 19.1517 5.12745 16.2189 3.32846Z" stroke="#EC7220" stroke-linecap="round"/>
+										 </svg>
+									 </button>
+									 <div class="card__img">
+										 <img src="img/card-4.png" alt="">
+									 </div>
+									 <div class="card__text">
+										 <h3 class="card__title">Pursangle tote bag</h3>
+										 <div class="card__price">400 000 ₽</div>
+									 </div>
+								</a>
+							 </div>
+
+							<div class="card catalog__item">
+								<a href="product.html">
+									 <button type="button" class="card-wish">
+										 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											 <path d="M16.2189 3.32846C13.9842 1.95769 12.0337 2.51009 10.8621 3.39001C10.3816 3.7508 10.1414 3.93119 10.0001 3.93119C9.85875 3.93119 9.61858 3.7508 9.13808 3.39001C7.96643 2.51009 6.01599 1.95769 3.78128 3.32846C0.848472 5.12745 0.184848 11.0624 6.94969 16.0695C8.23818 17.0232 8.88241 17.5 10.0001 17.5C11.1177 17.5 11.762 17.0232 13.0505 16.0695C19.8153 11.0624 19.1517 5.12745 16.2189 3.32846Z" stroke="#EC7220" stroke-linecap="round"/>
+										 </svg>
+									 </button>
+									 <div class="card__img">
+										 <img src="img/card-4.png" alt="">
+									 </div>
+									 <div class="card__text">
+										 <h3 class="card__title">Pursangle tote bag</h3>
+										 <div class="card__price">400 000 ₽</div>
+									 </div>
+								</a>
+							</div>
+
+						</div>
+
+						//= html/pagination.html
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="exp">
+			<div class="container">
+				<div class="exp__content">
+					<div class="exp__img">
+						<img src="img/exp-3.png" alt="">
+					</div>
+					<div class="exp__text">
+						<h2 class="page__h1"><span>Хотите продать сумку?</h2>
+						<div class="exp__descr">
+							<p>Самый выгодный способ продать люксовую сумку — обратиться к нам. Мы разбираемся в предметах роскоши и выкупаем их очень дорого!</p>
+							<p>Вы можете получить до 90% от рыночной цены изделия. За долгие годы работы заключили более 3000 сделок, провели более 5000 оценок online и заработали безупречную репутацию.</p>
+						</div>
+						<a href="javascript:;" class="btn popup-link" data-src="#request">Оставить заявку</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		//= html/goods.html
+
+		<section class="exp">
+			<div class="container">
+				<div class="exp__content">
+					<div class="exp__text">
+						<h2 class="page__h1">Предпродажная <br> подготовка <span>бесплатно</span></h2>
+						<div class="exp__descr">
+							<p>Предпродажная подготовка люксовых сумок Hermes — бесплатная услуга в бутике Hermes Bags. Мы тщательно проверяем состояние вашей сумки, очищаем ее 
+								и восстанавливаем внешний вид, чтобы сумка была готова к продаже.</p>
+							<p>Предпродажная подготовка гарантирует идеальное состояние сумки и максимальную цену при продаже.</p>
+						</div>
+						<a href="javascript:;" class="btn popup-link" data-src="#request">Оставить заявку</a>
+					</div>
+					<div class="exp__img">
+						<img src="img/exp-2.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+
+	//= html/footer.html
+	//= html/popup.html
+	//= html/scripts.html
+
+</body>
+</html>

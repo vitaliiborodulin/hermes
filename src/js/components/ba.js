@@ -1,0 +1,1 @@
+$('.ba-slider').beforeAfter();

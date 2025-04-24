@@ -1,0 +1,62 @@
+.feedback {
+    padding: 70px 0;
+
+    .md-block({
+        padding: 40px 0;
+    });
+
+    .xs-block({
+        padding: 30px 0;
+    });
+
+    &__item {
+        padding: 24px 16px;
+        border: 1px solid #E8DDCE;
+        border-radius: 30px;
+    }
+
+    &__pic {
+        margin-bottom: 16px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            border-radius: inherit;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__name {
+        font-size: 24px;
+        font-family: 'Viaoda';
+        font-weight: 400;
+        letter-spacing: -0.2px;
+        line-height: 1;
+        .xs(font-size, 20px);
+    }
+
+    &__date {
+        margin-top: 4px;
+        font-size: 14px;
+        color: #E8DDCE;
+        .xs(font-size, 12px);
+    }
+
+    &__text {
+        margin-top: 16px;
+        font-size: 14px;
+    }
+}
+
+.feedback-sl {
+    .goods__header {
+        margin-bottom: 40px;
+        .xs(margin-bottom, 16px);
+    }
+    // .goods__header .btn {
+    //     .xs(width, 70%);
+    // }
+}
