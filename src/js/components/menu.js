@@ -48,6 +48,18 @@ overlay.on('click', function(){
     $('body').removeClass("menu-opened")
 });
 
+$('.navigation__menu > li > a').on('click', function(){
+    overlay.removeClass("show");
+
+    searchMenu.removeClass("show");
+    navMenu.removeClass("show");
+
+    openSearch.removeClass("open");
+    openMenu.removeClass("open");
+
+    $('body').removeClass("menu-opened")
+});
+
 $('.menu-parent-item').on('click', function(){
     // $(this).addClass("current-menu-item").siblings().removeClass("current-menu-item");
     // $('.sub-menu').hide();
